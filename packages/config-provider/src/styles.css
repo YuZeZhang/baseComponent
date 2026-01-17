@@ -1,0 +1,11 @@
+:root {
+  --mourning-filter: none;
+}
+
+.mourning {
+  --mourning-filter: grayscale(100%);
+}
+
+html, body {
+  filter: var(--mourning-filter);
+}

@@ -1,0 +1,22 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "dumi dev",
+    "build": "dumi build",
+    "preview": "dumi preview"
+  },
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "@base-ui/button": "workspace:*",
+    "@base-ui/input": "workspace:*",
+    "@base-ui/theme": "workspace:*",
+    "@base-ui/utils": "workspace:*",
+    "@base-ui/config-provider": "workspace:*"
+  },
+  "devDependencies": {
+    "dumi": "^2.4.0"
+  }
+}

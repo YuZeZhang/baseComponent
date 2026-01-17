@@ -1,0 +1,21 @@
+{
+  "name": "@base-ui/utils",
+  "version": "1.0.0",
+  "description": "Utility functions for base UI",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "sideEffects": false,
+  "scripts": {
+    "build": "father build",
+    "dev": "father dev",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^3.4.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
