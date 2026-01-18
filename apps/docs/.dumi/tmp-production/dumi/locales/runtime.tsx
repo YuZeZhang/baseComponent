@@ -4,7 +4,7 @@
 import { history } from 'dumi';
 import React, { useState, useLayoutEffect, useCallback, type ReactNode } from 'react';
 import { RawIntlProvider, createIntl, createIntlCache } from '/Users/YuYang/Documents/baseComponent/node_modules/.pnpm/react-intl@7.1.14_react@18.3.1_typescript@5.9.3/node_modules/react-intl';
-import { useIsomorphicLayoutEffect } from '/Users/YuYang/Documents/baseComponent/node_modules/.pnpm/dumi@2.4.21_@babel+core@7.28.6_@types+node@25.0.9_@types+react@19.2.8_eslint@8.57.1_less-load_ajucnttmevgjt7jyc7dzinbgsu/node_modules/dumi/dist/client/theme-api/utils.js'
+import { useIsomorphicLayoutEffect } from '/Users/YuYang/Documents/baseComponent/node_modules/.pnpm/dumi@2.4.21_@babel+core@7.28.6_@types+node@25.0.9_@types+react@18.3.27_eslint@8.57.1_less-loa_whglcchrur73oj4mkjkfam6fre/node_modules/dumi/dist/client/theme-api/utils.js'
 import { locales, messages } from './config';
 
 const cache = createIntlCache();

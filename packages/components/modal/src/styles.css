@@ -1,0 +1,70 @@
+.ui-modal-root {
+  /* Overlay styles are handled by primitives, but we can override or add here if needed */
+}
+
+.ui-modal-content {
+  position: relative;
+  background-color: hsl(var(--background));
+  background-clip: padding-box;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+  pointer-events: auto;
+  padding: 20px 24px;
+  color: hsl(var(--foreground));
+  margin: 0 auto;
+}
+
+.ui-modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 10;
+  padding: 0;
+  color: hsl(var(--foreground));
+  background: transparent;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  transition: color 0.2s;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.ui-modal-close:hover {
+  color: hsl(var(--foreground) / 0.7);
+  background-color: rgba(0,0,0,0.05);
+  border-radius: 4px;
+}
+
+.ui-modal-header {
+  margin-bottom: 8px;
+  color: hsl(var(--foreground));
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.ui-modal-body {
+  font-size: 14px;
+  word-wrap: break-word;
+}
+
+.ui-modal-footer {
+  margin-top: 12px;
+  text-align: right;
+  background: transparent;
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+}
+
+.ui-modal-footer-default {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}

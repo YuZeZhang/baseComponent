@@ -1,0 +1,70 @@
+.ui-form {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: hsl(var(--foreground));
+  font-size: 14px;
+  line-height: 1.5715;
+}
+
+.ui-form-item {
+  margin-bottom: 24px;
+  vertical-align: top;
+}
+
+/* Vertical Layout */
+.ui-form-vertical .ui-form-item {
+  flex-direction: column;
+}
+
+.ui-form-vertical .ui-form-item-label {
+  padding: 0 0 8px;
+  line-height: 1.5715;
+  white-space: initial;
+  text-align: left;
+}
+
+/* Horizontal Layout */
+.ui-form-horizontal .ui-form-item {
+  display: flex;
+  flex-direction: row;
+}
+
+.ui-form-horizontal .ui-form-item-label {
+  flex-grow: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: right;
+  vertical-align: middle;
+  padding-right: 12px;
+  padding-top: 6px; /* align with input height */
+}
+
+.ui-form-horizontal .ui-form-item-control {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Required Mark */
+.ui-form-item-required::before {
+  display: inline-block;
+  margin-right: 4px;
+  color: hsl(var(--color-error));
+  font-size: 14px;
+  font-family: SimSun, sans-serif;
+  line-height: 1;
+  content: '*';
+}
+
+/* Explain / Error Text */
+.ui-form-item-explain {
+  clear: both;
+  color: hsl(var(--foreground) / 0.6);
+  font-size: 14px;
+  line-height: 1.5715;
+  padding-top: 4px;
+}
+
+.ui-form-item-status-error .ui-form-item-explain {
+  color: hsl(var(--color-error));
+}

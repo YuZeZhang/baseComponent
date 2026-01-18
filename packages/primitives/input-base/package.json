@@ -1,0 +1,23 @@
+{
+  "name": "@enterprise-ui/input-base",
+  "version": "1.0.0",
+  "description": "Headless input primitive for Enterprise UI",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "sideEffects": false,
+  "scripts": {
+    "build": "father build",
+    "dev": "father dev"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

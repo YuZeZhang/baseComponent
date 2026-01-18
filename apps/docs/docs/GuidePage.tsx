@@ -1,15 +1,15 @@
-import React, { useContext } from 'react';
-import { ConfigContext } from '@base-ui/config-provider';
+import React from 'react';
+import { ThemeProvider, useTheme } from '@enterprise-ui/theme';
 
 const en = {
   title: 'Guide',
-  welcome: 'Welcome to the base UI documentation!',
+  welcome: 'Welcome to the Enterprise UI documentation!',
   features: {
     title: 'Features',
     list: [
       '🚀 **Monorepo**: Managed by pnpm workspace & turborepo',
       '🎨 **Theming**: Native CSS Variables + Tailwind CSS',
-      '🌍 **Internationalization**: Built-in ConfigProvider',
+      '🌍 **Internationalization**: Built-in ThemeProvider',
       '🌓 **Dark Mode**: First-class support',
       '📦 **Tree Shaking**: ESM output by default',
     ],
@@ -27,13 +27,13 @@ const en = {
 
 const zh = {
   title: '指南',
-  welcome: '欢迎查阅 base UI 文档！',
+  welcome: '欢迎查阅 Enterprise UI 文档！',
   features: {
     title: '特性',
     list: [
       '🚀 **Monorepo**: 基于 pnpm workspace 与 turborepo 管理',
       '🎨 **主题系统**: 原生 CSS 变量 + Tailwind CSS',
-      '🌍 **国际化**: 内置 ConfigProvider 支持',
+      '🌍 **国际化**: 内置 ThemeProvider 支持',
       '🌓 **暗黑模式**: 一等公民支持',
       '📦 **按需加载**: 默认输出 ESM',
     ],
@@ -49,9 +49,9 @@ const zh = {
   },
 };
 
-export default function Guide() {
-  const ctx = useContext(ConfigContext);
-  const t = ctx?.locale === 'zh-CN' ? zh : en;
+function GuideContent() {
+  const { locale } = useTheme();
+  const t = locale === 'zh-CN' ? zh : en;
 
   return (
     <div className="markdown-body">
@@ -67,11 +67,11 @@ export default function Guide() {
 
       <h2>{t.gettingStarted.title}</h2>
       <h3>{t.gettingStarted.installation}</h3>
-      <pre><code>npm install @base-ui/button @base-ui/theme</code></pre>
+      <pre><code>npm install @enterprise-ui/button @enterprise-ui/theme</code></pre>
 
       <h3>{t.gettingStarted.usage}</h3>
-      <pre><code>{`import { Button } from '@base-ui/button';
-import '@base-ui/theme'; // Import global styles once
+      <pre><code>{`import { Button } from '@enterprise-ui/button';
+import '@enterprise-ui/theme'; // Import global styles once
 
 function App() {
   return <Button>Hello World</Button>;
@@ -83,5 +83,13 @@ function App() {
   --primary: 250 100% 50%; /* Change primary color to purple */
 }`}</code></pre>
     </div>
+  );
+}
+
+export default function Guide() {
+  return (
+    <ThemeProvider>
+      <GuideContent />
+    </ThemeProvider>
   );
 }

@@ -1,7 +1,7 @@
 {
-  "name": "@base-ui/utils",
+  "name": "@enterprise-ui/utils",
   "version": "1.0.0",
-  "description": "Utility functions for base UI",
+  "description": "Utility functions for Enterprise UI",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",

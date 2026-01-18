@@ -1,0 +1,24 @@
+{
+  "name": "@enterprise-ui/button-base",
+  "version": "1.0.0",
+  "description": "ButtonBase primitive for Enterprise UI",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "sideEffects": ["**/*.css"],
+  "scripts": {
+    "build": "father build",
+    "dev": "father dev"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "dependencies": {
+    "clsx": "^2.0.0",
+    "@enterprise-ui/touch-ripple": "workspace:*"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@enterprise-ui/design-tokens",
+  "version": "1.0.0",
+  "description": "Design tokens for Enterprise UI",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "sideEffects": false,
+  "scripts": {
+    "build": "father build",
+    "dev": "father dev"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

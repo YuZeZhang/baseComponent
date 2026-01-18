@@ -3,10 +3,24 @@
 // DO NOT CHANGE IT MANUALLY!
 import { frontmatter as fm0, toc as t0 } from '/Users/YuYang/Documents/baseComponent/apps/docs/docs/guide.md?type=frontmatter';
 import { demoIndex as dmi0 } from '/Users/YuYang/Documents/baseComponent/apps/docs/docs/guide.md?type=demo-index';
-import { frontmatter as fm1, toc as t1 } from '/Users/YuYang/Documents/baseComponent/packages/button/README.md?type=frontmatter';
-import { demoIndex as dmi1 } from '/Users/YuYang/Documents/baseComponent/packages/button/README.md?type=demo-index';
-import { frontmatter as fm2, toc as t2 } from '/Users/YuYang/Documents/baseComponent/packages/input/README.md?type=frontmatter';
-import { demoIndex as dmi2 } from '/Users/YuYang/Documents/baseComponent/packages/input/README.md?type=demo-index';
+import { frontmatter as fm1, toc as t1 } from '/Users/YuYang/Documents/baseComponent/packages/components/alert/README.md?type=frontmatter';
+import { demoIndex as dmi1 } from '/Users/YuYang/Documents/baseComponent/packages/components/alert/README.md?type=demo-index';
+import { frontmatter as fm2, toc as t2 } from '/Users/YuYang/Documents/baseComponent/packages/components/button/README.md?type=frontmatter';
+import { demoIndex as dmi2 } from '/Users/YuYang/Documents/baseComponent/packages/components/button/README.md?type=demo-index';
+import { frontmatter as fm3, toc as t3 } from '/Users/YuYang/Documents/baseComponent/packages/components/checkbox/README.md?type=frontmatter';
+import { demoIndex as dmi3 } from '/Users/YuYang/Documents/baseComponent/packages/components/checkbox/README.md?type=demo-index';
+import { frontmatter as fm4, toc as t4 } from '/Users/YuYang/Documents/baseComponent/packages/components/input/README.md?type=frontmatter';
+import { demoIndex as dmi4 } from '/Users/YuYang/Documents/baseComponent/packages/components/input/README.md?type=demo-index';
+import { frontmatter as fm5, toc as t5 } from '/Users/YuYang/Documents/baseComponent/packages/components/modal/README.md?type=frontmatter';
+import { demoIndex as dmi5 } from '/Users/YuYang/Documents/baseComponent/packages/components/modal/README.md?type=demo-index';
+import { frontmatter as fm6, toc as t6 } from '/Users/YuYang/Documents/baseComponent/packages/components/radio-group/README.md?type=frontmatter';
+import { demoIndex as dmi6 } from '/Users/YuYang/Documents/baseComponent/packages/components/radio-group/README.md?type=demo-index';
+import { frontmatter as fm7, toc as t7 } from '/Users/YuYang/Documents/baseComponent/packages/components/select/README.md?type=frontmatter';
+import { demoIndex as dmi7 } from '/Users/YuYang/Documents/baseComponent/packages/components/select/README.md?type=demo-index';
+import { frontmatter as fm8, toc as t8 } from '/Users/YuYang/Documents/baseComponent/packages/components/text-field/README.md?type=frontmatter';
+import { demoIndex as dmi8 } from '/Users/YuYang/Documents/baseComponent/packages/components/text-field/README.md?type=demo-index';
+import { frontmatter as fm9, toc as t9 } from '/Users/YuYang/Documents/baseComponent/packages/patterns/form/README.md?type=frontmatter';
+import { demoIndex as dmi9 } from '/Users/YuYang/Documents/baseComponent/packages/patterns/form/README.md?type=demo-index';
 
 export const filesMeta = {
   'docs/guide': {
@@ -15,17 +29,59 @@ export const filesMeta = {
     demoIndex: dmi0,
     textGetter: () => import(/* webpackChunkName: "meta__docs" */'/Users/YuYang/Documents/baseComponent/apps/docs/docs/guide.md?type=text'),
   },
-  'components/button/README': {
+  'components/alert/README': {
     frontmatter: fm1,
     toc: t1,
     demoIndex: dmi1,
-    textGetter: () => import(/* webpackChunkName: "meta__" */'/Users/YuYang/Documents/baseComponent/packages/button/README.md?type=text'),
+    textGetter: () => import(/* webpackChunkName: "meta__" */'/Users/YuYang/Documents/baseComponent/packages/components/alert/README.md?type=text'),
   },
-  'components/input/README': {
+  'components/button/README': {
     frontmatter: fm2,
     toc: t2,
     demoIndex: dmi2,
-    textGetter: () => import(/* webpackChunkName: "meta__" */'/Users/YuYang/Documents/baseComponent/packages/input/README.md?type=text'),
+    textGetter: () => import(/* webpackChunkName: "meta__" */'/Users/YuYang/Documents/baseComponent/packages/components/button/README.md?type=text'),
+  },
+  'components/checkbox/README': {
+    frontmatter: fm3,
+    toc: t3,
+    demoIndex: dmi3,
+    textGetter: () => import(/* webpackChunkName: "meta__" */'/Users/YuYang/Documents/baseComponent/packages/components/checkbox/README.md?type=text'),
+  },
+  'components/input/README': {
+    frontmatter: fm4,
+    toc: t4,
+    demoIndex: dmi4,
+    textGetter: () => import(/* webpackChunkName: "meta__" */'/Users/YuYang/Documents/baseComponent/packages/components/input/README.md?type=text'),
+  },
+  'components/modal/README': {
+    frontmatter: fm5,
+    toc: t5,
+    demoIndex: dmi5,
+    textGetter: () => import(/* webpackChunkName: "meta__" */'/Users/YuYang/Documents/baseComponent/packages/components/modal/README.md?type=text'),
+  },
+  'components/radio-group/README': {
+    frontmatter: fm6,
+    toc: t6,
+    demoIndex: dmi6,
+    textGetter: () => import(/* webpackChunkName: "meta__" */'/Users/YuYang/Documents/baseComponent/packages/components/radio-group/README.md?type=text'),
+  },
+  'components/select/README': {
+    frontmatter: fm7,
+    toc: t7,
+    demoIndex: dmi7,
+    textGetter: () => import(/* webpackChunkName: "meta__" */'/Users/YuYang/Documents/baseComponent/packages/components/select/README.md?type=text'),
+  },
+  'components/text-field/README': {
+    frontmatter: fm8,
+    toc: t8,
+    demoIndex: dmi8,
+    textGetter: () => import(/* webpackChunkName: "meta__" */'/Users/YuYang/Documents/baseComponent/packages/components/text-field/README.md?type=text'),
+  },
+  'patterns/form/README': {
+    frontmatter: fm9,
+    toc: t9,
+    demoIndex: dmi9,
+    textGetter: () => import(/* webpackChunkName: "meta__" */'/Users/YuYang/Documents/baseComponent/packages/patterns/form/README.md?type=text'),
   },
 }
 

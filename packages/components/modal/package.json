@@ -1,0 +1,26 @@
+{
+  "name": "@enterprise-ui/modal",
+  "version": "1.0.0",
+  "description": "Modal component for Enterprise UI",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "sideEffects": ["**/*.css"],
+  "scripts": {
+    "build": "father build",
+    "dev": "father dev"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "dependencies": {
+    "@enterprise-ui/overlay": "workspace:*",
+    "@enterprise-ui/utils": "workspace:*",
+    "@enterprise-ui/theme": "workspace:*",
+    "@enterprise-ui/button": "workspace:*"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

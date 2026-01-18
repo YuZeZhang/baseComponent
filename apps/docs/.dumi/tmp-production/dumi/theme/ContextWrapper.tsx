@@ -4,7 +4,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useOutlet, history } from 'dumi';
 import { warning } from '/Users/YuYang/Documents/baseComponent/node_modules/.pnpm/rc-util@5.44.4_react-dom@18.3.1_react@18.3.1/node_modules/rc-util';
-import { SiteContext, type ISiteContext } from '/Users/YuYang/Documents/baseComponent/node_modules/.pnpm/dumi@2.4.21_@babel+core@7.28.6_@types+node@25.0.9_@types+react@19.2.8_eslint@8.57.1_less-load_ajucnttmevgjt7jyc7dzinbgsu/node_modules/dumi/dist/client/theme-api/context.js';
+import { SiteContext, type ISiteContext } from '/Users/YuYang/Documents/baseComponent/node_modules/.pnpm/dumi@2.4.21_@babel+core@7.28.6_@types+node@25.0.9_@types+react@18.3.27_eslint@8.57.1_less-loa_whglcchrur73oj4mkjkfam6fre/node_modules/dumi/dist/client/theme-api/context.js';
 import { components } from '../meta/atoms';
 import { locales } from '../locales/config';
 
@@ -17,7 +17,7 @@ const entryExports = {
 const pkg = {"name":"docs","version":"1.0.0"};
 const historyType = "browser";
 const hostname = undefined;
-const themeConfig = {"footer":"Copyright © 2026 | Powered by <a href=\"https://d.umijs.org\" target=\"_blank\" rel=\"noreferrer\">dumi</a>","prefersColor":{"default":"light","switch":true},"nprogress":true,"lastUpdated":true,"name":"base UI","nav":[{"title":"Guide","link":"/guide"},{"title":"Button","link":"/components/button"},{"title":"Input","link":"/components/input"}]};
+const themeConfig = {"footer":"Copyright © 2026 Enterprise UI Team | Powered by Dumi","prefersColor":{"default":"light","switch":true},"nprogress":true,"lastUpdated":true,"name":"Enterprise UI","nav":[{"title":"Guide","link":"/guide"},{"title":"Components","link":"/components/button"},{"title":"Patterns","link":"/patterns/form"}],"socialLinks":{"github":"https://github.com/your-org/enterprise-ui"}};
 const _2_level_nav_available = true;
 
 export default function DumiContextWrapper() {

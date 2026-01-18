@@ -10,11 +10,17 @@
   "dependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "@base-ui/button": "workspace:*",
-    "@base-ui/input": "workspace:*",
-    "@base-ui/theme": "workspace:*",
-    "@base-ui/utils": "workspace:*",
-    "@base-ui/config-provider": "workspace:*"
+    "@enterprise-ui/button": "workspace:*",
+    "@enterprise-ui/input": "workspace:*",
+    "@enterprise-ui/modal": "workspace:*",
+    "@enterprise-ui/alert": "workspace:*",
+    "@enterprise-ui/checkbox": "workspace:*",
+    "@enterprise-ui/radio-group": "workspace:*",
+    "@enterprise-ui/select": "workspace:*",
+    "@enterprise-ui/text-field": "workspace:*",
+    "@enterprise-ui/form": "workspace:*",
+    "@enterprise-ui/theme": "workspace:*",
+    "@enterprise-ui/utils": "workspace:*"
   },
   "devDependencies": {
     "dumi": "^2.4.0"

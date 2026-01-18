@@ -17,7 +17,13 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "paths": {
-      "@base-ui/*": ["packages/*/src"]
+      "@enterprise-ui/*": [
+        "packages/components/*/src",
+        "packages/primitives/*/src",
+        "packages/patterns/*/src",
+        "packages/foundation/*/src",
+        "packages/*/src"
+      ]
     }
   },
   "include": ["packages", "apps"],

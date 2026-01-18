@@ -1,0 +1,72 @@
+.ui-checkbox-root {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.ui-checkbox-fullWidth {
+  width: 100%;
+}
+
+/* Colors */
+.ui-checkbox-color-primary input:checked ~ .ui-checkbox-base-icon {
+  background-color: #1976d2;
+  border-color: #1976d2;
+  color: white;
+}
+
+.ui-checkbox-color-secondary input:checked ~ .ui-checkbox-base-icon {
+  background-color: #9c27b0;
+  border-color: #9c27b0;
+  color: white;
+}
+
+.ui-checkbox-color-error input:checked ~ .ui-checkbox-base-icon {
+  background-color: #d32f2f;
+  border-color: #d32f2f;
+  color: white;
+}
+
+.ui-checkbox-color-success input:checked ~ .ui-checkbox-base-icon {
+  background-color: #2e7d32;
+  border-color: #2e7d32;
+  color: white;
+}
+
+.ui-checkbox-color-info input:checked ~ .ui-checkbox-base-icon {
+  background-color: #0288d1;
+  border-color: #0288d1;
+  color: white;
+}
+
+.ui-checkbox-color-warning input:checked ~ .ui-checkbox-base-icon {
+  background-color: #ed6c02;
+  border-color: #ed6c02;
+  color: white;
+}
+
+.ui-checkbox-color-default input:checked ~ .ui-checkbox-base-icon {
+  background-color: #616161;
+  border-color: #616161;
+  color: white;
+}
+
+.ui-checkbox-color-primary input:indeterminate ~ .ui-checkbox-base-icon,
+.ui-checkbox-color-secondary input:indeterminate ~ .ui-checkbox-base-icon,
+.ui-checkbox-color-error input:indeterminate ~ .ui-checkbox-base-icon,
+.ui-checkbox-color-success input:indeterminate ~ .ui-checkbox-base-icon,
+.ui-checkbox-color-info input:indeterminate ~ .ui-checkbox-base-icon,
+.ui-checkbox-color-warning input:indeterminate ~ .ui-checkbox-base-icon,
+.ui-checkbox-color-default input:indeterminate ~ .ui-checkbox-base-icon {
+  background-color: #1976d2;
+  border-color: #1976d2;
+  color: white;
+}
+
+.ui-checkbox-root:hover input:not(:checked) ~ .ui-checkbox-base-icon {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+/* Indeterminate state */
+.ui-checkbox-indeterminate input:checked ~ .ui-checkbox-base-icon,
+.ui-checkbox-indeterminate input:indeterminate ~ .ui-checkbox-base-icon {
+  opacity: 0.6;
+}

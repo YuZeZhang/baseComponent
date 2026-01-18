@@ -3,7 +3,7 @@
 // DO NOT CHANGE IT MANUALLY!
 import nprogress from '/Users/YuYang/Documents/baseComponent/node_modules/.pnpm/nprogress@0.2.0/node_modules/nprogress';
 import './nprogress.css';
-import UserLoading from '/Users/YuYang/Documents/baseComponent/node_modules/.pnpm/dumi@2.4.21_@babel+core@7.28.6_@types+node@25.0.9_@types+react@19.2.8_eslint@8.57.1_less-load_ajucnttmevgjt7jyc7dzinbgsu/node_modules/dumi/dist/client/pages/Loading';
+import UserLoading from '/Users/YuYang/Documents/baseComponent/node_modules/.pnpm/dumi@2.4.21_@babel+core@7.28.6_@types+node@25.0.9_@types+react@18.3.27_eslint@8.57.1_less-loa_whglcchrur73oj4mkjkfam6fre/node_modules/dumi/dist/client/pages/Loading';
 import React, { useLayoutEffect, type FC } from 'react';
 import { useSiteData } from 'dumi';
 
